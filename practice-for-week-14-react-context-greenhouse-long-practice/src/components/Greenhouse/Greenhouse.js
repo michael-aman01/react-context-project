@@ -11,7 +11,6 @@ function Greenhouse() {
 
   return (
     <section
-
 		>
       <img  className='greenhouse-img'
             src={themeName === "day" ? dayImage : nightImage}
