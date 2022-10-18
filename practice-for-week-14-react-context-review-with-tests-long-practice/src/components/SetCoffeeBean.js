@@ -16,7 +16,7 @@ const SetCoffeeBean = ({ coffeeBeans }) => {
       <select
         name="coffee-bean"
         ref = {ref}
-        onChange = {handleChange}
+        onChange = {(e) => handleChange(e)}
       >
         {coffeeBeans.map(bean => (
           <option
