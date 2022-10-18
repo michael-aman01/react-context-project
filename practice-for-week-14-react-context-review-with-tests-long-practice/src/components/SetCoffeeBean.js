@@ -3,7 +3,7 @@ import {useRef} from 'react';
 
 
 const SetCoffeeBean = ({ coffeeBeans }) => {
-  const {setCoffeeBeanId} = useCoffeeContext();
+  const {coffeeBean, setCoffeeBeanId} = useCoffeeContext();
 
   const ref = useRef()
   const handleChange = (e) => {
@@ -16,6 +16,7 @@ const SetCoffeeBean = ({ coffeeBeans }) => {
       <select
         name="coffee-bean"
         ref = {ref}
+				value={coffeeBean.id}
         onChange = {(e) => handleChange(e)}
       >
         {coffeeBeans.map(bean => (
